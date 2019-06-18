@@ -1,0 +1,8 @@
+{
+    "server":"::",
+    "server_port":7654,
+    "local_port":1080,
+    "password":"digitaloceanss",
+    "timeout":300,
+    "method":"chacha20"
+}
