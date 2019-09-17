@@ -4,5 +4,5 @@
     "local_port":1080,
     "password":"digitaloceanss",
     "timeout":300,
-    "method":"chacha20"
+    "method":"aes-256-cfb"
 }
