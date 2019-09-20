@@ -1,8 +1,8 @@
 {
     "server":"::",
-    "server_port":7654,
+    "server_port":7456,
     "local_port":1080,
-    "password":"digitaloceanss",
+    "password":"nimasile",
     "timeout":300,
-    "method":"aes-256-cfb"
+    "method":"chacha20"
 }
