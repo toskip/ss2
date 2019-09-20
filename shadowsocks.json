@@ -1,8 +1,8 @@
 {
     "server":"::",
-    "server_port":7456,
-    "local_port":1080,
-    "password":"nimasile",
+    "server_port":7004,
+    "local_port":1004,
+    "password":"Nimasile",
     "timeout":300,
-    "method":"chacha20"
+    "method":"salsa20"
 }
