@@ -1,8 +1,8 @@
 {
     "server":"::",
-    "server_port":7004,
+    "server_port":7120,
     "local_port":1004,
-    "password":"Nimasile",
+    "password":"321Test123",
     "timeout":300,
-    "method":"aes-128-cfb"
+    "method":"salsa20"
 }
