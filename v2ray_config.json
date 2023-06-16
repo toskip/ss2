@@ -1,7 +1,7 @@
 {
   "inbounds": [
     {
-      "port": 50443,
+      "port": 60443,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -23,12 +23,58 @@
           ]
         }
       }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 60453,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "level": 1,
+            "id": "108c4353-c4a5-4c93-b634-2b5ea6ad08f1",
+            "alterId": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/nidaoxyz"
+        }
+      }
     }
   ],
   "outbounds": [
     {
+      "tag": "chatGPT_proxy",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "127.0.0.1",
+            "port": 40000
+          }
+        ]
+      }
+    },
+    {
       "protocol": "freedom",
       "settings": {}
     }
-  ]
+  ],
+  "routing": {
+    "domainStrategy": "IPOnDemand",
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "chatgpt_proxy",
+        "domain": [
+          "openai.com",
+          "sydney.bing.com"
+        ],
+        "enabled": true
+      }
+    ]
+  }
 }
