@@ -1,6 +1,6 @@
 # ss
 ```
-bash <(curl -L https://raw.githubusercontent.com/nemosc/ss/master/v2ray.sh)
+bash <(curl -L https://raw.githubusercontent.com/toskip/ss2/master/v2ray.sh)
 ```
 
 Linux 开启新增 Swap分区
